@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class abc{
+            #rating;
+      constructor(n,s,m){
+        this.name=n;
+        this.#rating=s;
+
+      }
+      get ratingGetter(){
+        console.log("getrating")
+      }
+      set ratingSetter(s){
+      if(s<0)
+        return this.#rating=s; 
+      }
+
+        }
+        const p=new abc("kahle",9)
+        p.ratingSetter=10;
+        p.ratingGetter;
+    </script>
+</body>
+</html>

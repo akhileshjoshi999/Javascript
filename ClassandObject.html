@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class pro{
+            // name;
+            // age;
+            // sal;
+            // private data member
+            #name;
+            constructor(n,p,r,s){
+                this.name=n;
+                this.age=p;
+                this.sal=r;
+               
+// return {a:"akhilesh"};
+            }
+            display(){
+                console.log("hello classes and object", this.#name)
+
+            }
+            static custum(){
+                console.log(" i m learning static keyword")
+            }
+         
+        }
+        const p=new pro("iphone",23,14);
+        // p.name="rollo";
+        console.log(p);
+
+        p.display();
+        pro.custum();
+       
+    </script>
+</body>
+</html>

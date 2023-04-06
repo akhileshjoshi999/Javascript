@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+header{
+    background-color: aqua;
+   
+
+  
+}
+img{
+    
+    height:200px;
+    width:200px;
+    border-radius: 20px;
+    margin-left: 2.5%;
+    /* filter: grayscale(100%); */
+ 
+}
+button{
+    width: 80px;
+    height: 20px;
+   
+
+}
+footer{
+    width: 40%;
+    margin-left:2.7%;
+   padding-top: 20px;
+}
+section{
+    font-size: 20px;
+    list-style: circle;
+    padding: 10px;
+
+}
+.box{
+  text-decoration-line: underline;
+    border-width: 40%;
+    padding-bottom: 20px;
+    font-weight: bold;
+    list-style: none;
+    
+}
+#buttn{
+    width:auto
+
+}
+    </style>
+</head>
+<body>
+    <p id="demo">i am learning event handeling</p>
+
+<!-- <script>
+    let a=document.getElementById('btn');
+    let para=document.getElementById('demo');
+para.addEventListener('mouseover' ,function hide(){
+console.log('mouse outside')
+alert('mouse outside')
+
+});
+
+let hide=()=>{
+    document.body.style.backgroundColor='red';
+    if(para.style.display!='none'){
+        para.style.display='none';
+    }
+    else{
+        para.style.display='block';
+    }
+   
+}
+</script> -->
+      
+    <header id="head"><h1>college</h1>
+    <p id="tagname">computer educator</p>
+    <h1 class="heade">here is the begenning</h1>
+</header>
+<section>
+<ul>
+    <li class="box">courses</li>
+    <li class="box">graphics </li><hr>
+    <li class="box">video</li><hr>
+    <li class="box">3d</li><hr>
+</ul>
+<div id="img1"><img src="https://images.pexels.com/photos/14800043/pexels-photo-14800043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img"></div>
+</section>
+<footer>
+    <input type="text">
+<button id="btn" onclick="hide()">submit</button>
+<button id="buttn">Colorchange</button>
+</footer>
+<script src="dom1.js"></script>
+</body>
+
+</html>

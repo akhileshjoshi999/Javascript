@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>let d=10;
+        function clos1(a){
+            let b=2;
+            function clos2(){
+                let c=10;
+        console.log(a+b+c+d);
+
+            }
+        
+        clos2()
+        }
+        clos1(20);
+
+
+        
+function clos11(a){
+            let b=2;
+            
+          function clos22(){
+             let c=100;
+             console.log(a+b+c)
+
+          }
+return clos22;
+            }
+    
+        let abc=clos11(20);
+        abc();
+    </script>
+</body>
+</html>

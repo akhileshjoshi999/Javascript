@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor(brand){
+                this.name=brand;
+
+            }
+            display(){
+                console.log( this.name)
+            }
+
+        }
+        class bike extends car{
+                
+                constructor(brand,model){
+                    super(brand)
+                    this.model=model;
+                
+                }
+                show() {
+                    console.log(this.model)
+                }
+                            }
+                            let cr=new bike("toyota","r50");
+                            cr.display()
+                         cr.show(); 
+    </script>
+</body>
+</html>

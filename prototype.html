@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let objproto={name:"akhil",address:"khargapur",no:9807};
+        let objprotro2={name:"rollo", address:"saraswatipuram"}
+        Object.setPrototypeOf(objproto,objprotro2);
+    console.log(objprotro2)
+   function bankacont(name,acountno,balance){
+    this.name=name;
+    this.acountno=acountno;
+    this.balance=balance;
+
+
+   }
+bankacont.prototype.deposit=function(amount){
+    this.balance+=amount;
+}
+String.prototype.truelength=function(){
+    console.log(`True length is ${this.trim().length}`)
+}
+   const obj=new bankacont("akhilesh",34446353843,30000)
+   console.log(obj);
+   obj.deposit(3000);
+   console.log(obj);
+   "akhilesh.    ".truelength();
+    </script>
+</body>
+</html>
